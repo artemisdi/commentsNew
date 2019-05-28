@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TestHHM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo row ">
+            <img src="graphic/icons/logo.png" alt=""
+                 class="col-xl-3 offset-xl-0 col-lg-3
+           offset-lg-0 col-md-6 offset-md-3 col-sm-6
+           offset-sm-3 col-6 col-6 offset-3"
+            id="logoRow"
+            >
+        </div>
+        <div class="row male">
+            <img src="graphic/icons/Malle.png" alt=""
+                 class="col-xl-3 offset-xl-4 col-lg-3
+           offset-lg-4 col-md-6 offset-md-3 col-sm-6
+           offset-sm-3 col-6 offset-3"
+                 id="maleImg"
+            >
+        </div>
+        <div class="row form justify-content-between">
+            <div class="form-name col-xl-5 offset-xl-0
+      col-lg-5 offset-lg-0 col-md-6 offset-md-0
+      col-sm-8 offset-sm-2  col-8 offset-2">
+                <div class="form-name__user">
+                    <p class="text-form">Имя <span class="star-none">*</span></p>
+                    <input type="text" class="form-control" id="formUserName" a
+                           utofocus maxlength="50" spellcheck="true"
+                    >
+                </div>
+                <div class="form-name__male">
+                    <p class="text-form">почта <span class="star-none">*</span></p>
+                    <input type="email" class="form-control" id="formEmail"
+                           maxlength="50" spellcheck="false"
+
+                    >
+                </div>
+            </div>
+            <div class="form-textarea col-xl-6 offset-xl-1
+      col-lg-6 offset-lg-1 col-md-6 offset-md-0 col-sm-8 offset-sm-2
+      col-8 offset-2">
+                <p class="text-form">Коментарий <span class="star-none">*</span></p>
+                <textarea name="" cols="30" rows="10" class="form-control" id="formComment"
+                          maxlength="150" spellcheck="true"
+                ></textarea>
+            </div>
+        </div>
+        <div class="butt row">
+            <button class="btn btn-danger col-xl-1
+      offset-xl-11 col-lg-1 offset-lg-11 col-md-4
+      offset-md-4 col-sm-4 offset-sm-4 col-4 offset-4"
+                    id="formButtServer">Записать
+            </button>
+        </div>
+    </div>
+</header>
+<section class="comments">
+    <div class="container">
+        <div class="row head justify-content-center ">
+            <p class="col-xl-6 col-lg-6 col-md-6
+      col-sm-8 col-12">Выводим комментарии</p>
+        </div>
+        <div class="row comments-user justify-content-center" id="containerComment"></div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="icons col-xl-3 offset-xl-0 col-lg-3 offset-lg-0 col-md-4 offset-md-0 col-sm-6 offset-sm-3 col-6 offset-3">
+                <a href="#" title="icons">
+                    <img src="graphic/icons/logo.png" alt="" class="col-12">
+                </a>
+            </div>
+            <div class="social row col-xl-2 offset-xl-0 col-lg-2 offset-lg-0 col-md-2 offset-md-0 col-sm-6 offset-sm-4 col-6 offset-4">
+                <div class="social-vk col-xl-6 offset-xl-0 col-lg-6 offset-lg-0 col-md-6 offset-md-0 col-sm-3 offset-sm-1 col-3 offset-1">
+                    <a href="https://vk.com/pomosc_h_studentam" title="ВК" target="_blank">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="social-fb col-xl-6 offset-xl-0 col-lg-6 offset-lg-0 col-md-6 offset-md-0 col-sm-3 offset-sm-1 col-3 offset-1">
+                    <a href="https://www.facebook.com/" title="F" target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

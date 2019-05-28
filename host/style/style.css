@@ -1,0 +1,293 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    background: #333333;
+}
+
+header > .container {
+    padding-top: 20px;
+}
+
+.male {
+    padding-top: 20px;
+}
+
+
+.form {
+    padding-top: 20px;
+}
+
+input {
+    font-size: 26px !important;
+}
+
+input, textarea {
+    background: #333333 !important;
+    color: #d7d7d7 !important;
+}
+
+#maleImg {
+    height: 25%;
+}
+
+#logoRow {
+    height: 25%;
+}
+
+.form-name__user, .form-name__male {
+    display: flex;
+    flex-direction: column;
+    color: #d7d7d7
+}
+
+
+.form-name__male {
+    margin-top: 16px;
+}
+
+.form-name__user p, .form-name__male p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+}
+
+.form-textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-textarea p {
+    color: #d7d7d7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+}
+
+.form-textarea textarea {
+    max-height: 180px;
+    min-height: 180px;
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.butt {
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+
+.butt > div > button {
+    font-size: 36px;
+}
+
+
+/**
+Стили для карточек по коментам
+
+**/
+.comments {
+    background: #ffffff;
+}
+
+.container > div:nth-child(1) {
+    margin-top: 50px;
+}
+
+.comments > div > div > p {
+    font-size: 28px;
+    text-align: center;
+    color: rgb(55, 65, 78);
+}
+
+.comments-user__comment {
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.comments-user__comment:nth-child(2n+1) .header {
+    background: #336666;
+}
+
+.comments-user__comment:nth-child(2n+1) .body span:nth-child(1) {
+    color: #666666;
+}
+
+.comments-user__comment:nth-child(2n+1) .body span:nth-child(2) {
+    color: #666699;
+}
+
+.comments-user__comment:nth-child(2n) .header {
+    background: #669966;
+}
+
+.comments-user__comment:nth-child(2n) .body span:nth-child(1) {
+    color: #669966;
+}
+
+.comments-user__comment:nth-child(2n) .body span:nth-child(2) {
+    color: #768275;
+}
+
+
+.comments .header {
+    font-size: 26px;
+    text-align: center;
+    color: white;
+    background: #336666;
+    padding: 12px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comments .body {
+    background-image: url("../graphic/background/cardBack.png");
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comments .body span:nth-child(1) {
+    color: #336666;
+    padding: 25px 15px;
+}
+
+.comments .body {
+    min-height: 250px;
+}
+
+.comments .body span:nth-child(2) {
+    padding: 25px 15px;
+}
+
+/*
+СТИЛИ ДЛЯ ФУТЕРА
+**/
+
+footer {
+    background-image: url("../graphic/background/footerBackground.png");
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.container > div .social a {
+    color: rgb(101, 101, 102);
+    background: #333333;
+    font-size: 22px;
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+
+.container .social .social-fb a {
+    padding: 5px 14px;
+    border: 1px solid #666666;
+
+}
+
+.star-none {
+    color: #cc3333;
+}
+
+.text-form {
+    font-size: 28px;
+}
+
+@keyframes mailRotate {
+    to {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+.add-comment {
+    animation: mailRotate 0.8s ease forwards;
+}
+
+div .form-control {
+    border: 1px solid rgba(255, 255, 255, 0.124) !important;
+}
+
+div .form-control:focus {
+    border: 1px solid rgba(190, 57, 59, 0.49) !important;
+    box-shadow: 0 0 0 !important;
+    background: rgb(47, 49, 54) !important;
+}
+
+@media screen and (min-width: 992px) {
+    .container .social-vk, .container .social-fb {
+        padding: 0 !important;
+    }
+
+    .butt {
+        margin-right: 11px;
+    }
+
+    .butt button {
+        max-width: 11%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container .social-vk, .container .social-fb {
+        padding: 0 !important;
+    }
+
+    .form-name__user p, .form-name__male p, .form-textarea p {
+        font-size: 22px;
+    }
+
+    .form-textarea textarea {
+        max-height: 170px;
+        min-height: 170px;
+    }
+}
+
+@media screen and (min-width: 576px ) and (max-width: 767px) {
+    .container .social-vk, .container .social-fb {
+        padding: 0 !important;
+    }
+
+    .form-name__male {
+        margin-bottom: 15px;
+    }
+
+    .form-name__user p, .form-name__male p, .form-textarea p {
+        font-size: 18px;
+    }
+
+    #maleImg {
+        height: 50%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .container .social-vk, .container .social-fb {
+        padding: 0 !important;
+    }
+
+    .form-name__male {
+        margin-bottom: 15px;
+    }
+
+    .form-name__user p, .form-name__male p, .form-textarea p {
+        font-size: 14px;
+    }
+
+    .form-textarea textarea, .form-name__user input, .form-name__male input {
+        font-size: 14px!important;
+    }
+
+    #maleImg {
+        height: 50%;
+    }
+    .body {
+        font-size: 10px!important;
+    }
+}
